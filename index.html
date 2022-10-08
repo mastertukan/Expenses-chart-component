@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <noscript>
+            <p>Your browser doesn't allow scripts!</p>
+        </noscript>
+
+        <title>Frontend Mentor | Expenses chart component</title>
+    </head>
+
+    <body onload="currentDay();">
+        <header>
+            <div class="header-left">
+                <h2>My balance</h2>
+                <div class="current-balance">$921.48</div>
+            </div>
+
+            <img src="./images/logo.svg" alt="logo" class="logo">
+        </header>
+
+        <main>
+            <div class="main-heading-container">
+                <h1>Spending - Last 7 days</h1>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        <div id="day-1" class="day-output" onmouseover="changeColorOnHover(1); displayIncome(1);" onmouseout="changeColorOnBlur(1); hideIncome(1);"><div class="income-info" id="income-info-1">$17.45</div></div>
+                    </div>
+                    <div class="day-name">mon</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        <div id="day-2" class="day-output" onmouseover="changeColorOnHover(2);  displayIncome(2);" onmouseout="changeColorOnBlur(2); hideIncome(2);"><div class="income-info" id="income-info-2">$34.91</div></div>
+                    </div>
+                    <div class="day-name">tue</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        <div id="day-3" class="day-output" onmouseover="changeColorOnHover(3); displayIncome(3);" onmouseout="changeColorOnBlur(3); hideIncome(3);"><div class="income-info" id="income-info-3">$52.36</div></div>
+                    </div>
+                    <div class="day-name">wed</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        
+                        <div id="day-4" class="day-output" onmouseover="changeColorOnHover(4); displayIncome(4);" onmouseout="changeColorOnBlur(4); hideIncome(4);"><div class="income-info" id="income-info-4">$31.07</div></div>
+                    </div>
+                    <div class="day-name">thu</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        
+                        <div id="day-5" class="day-output" onmouseover="changeColorOnHover(5); displayIncome(5);" onmouseout="changeColorOnBlur(5); hideIncome(5);"><div class="income-info" id="income-info-5">$23.39</div></div>
+                    </div>
+                    <div class="day-name">fri</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        
+                        <div id="day-6" class="day-output" onmouseover="changeColorOnHover(6); displayIncome(6);" onmouseout="changeColorOnBlur(6); hideIncome(6);"><div class="income-info" id="income-info-6">$43.28</div></div>
+                    </div>
+                    <div class="day-name">sat</div>
+                </div>
+
+                <div class="chart-item-container">
+                    <div class="day-column">
+                        <div id="day-7" class="day-output" onmouseover="changeColorOnHover(7); displayIncome(7);" onmouseout="changeColorOnBlur(7); hideIncome(7);"><div class="income-info" id="income-info-7">$25.48</div></div>
+                    </div>
+                    <div class="day-name">sun</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="income-heading"><h2>Total this month</h2></div>
+
+            <div class="income-container">
+                <div class="income">$478.33</div>
+
+                <div class="comparassion-container">
+                    <p>+2.4%</p>
+                    <h2>from last month</h2>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/mastertukan" target="_blank">Mastertukan</a>.
+            </div>
+        </footer>
+    </body>
+</html>
