@@ -1,9 +1,12 @@
 function currentDay() {
     const d = new Date();
-    let day = d.getDay();
+    let day = d.getDay() + 7;
 
+    console.log(day);
     let identifier = "day-" + day;
+
     document.getElementById(identifier).style.backgroundColor = "var(--cyan)";
+
 }
 
 function changeColorOnHover(index) {
@@ -17,7 +20,6 @@ function changeColorOnHover(index) {
     } else {
         document.getElementById(identifier).style.backgroundColor = "hsl(9, 100%, 85%)";
     }
-    
 }
 
 function changeColorOnBlur(index) {
